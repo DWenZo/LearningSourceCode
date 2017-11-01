@@ -1,0 +1,160 @@
+/*2017-10-20 WenZo*/
+/*全局字体设置*/
+* {
+    font-size:20px;
+    margin:0;
+}
+/*-------------------------------------*/
+.nav{
+    height: 10%;
+    padding:0;
+    margin:0;
+
+    background-color: #18c4e2 ;
+}
+li{
+    float: left;
+    margin-left:10px;
+    margin-top: 3px;
+}
+ul{
+    height: 10%;
+    list-style: none;    /*去除小圆点*/
+}
+/*导航栏各种设置*/
+a:link{
+    color:blue;
+    text-decoration-line: none;
+    font-size:180%;
+}
+a:hover{
+    color:#ffffff;
+    font-size: 210%;
+}
+.active a{
+    color:pink;
+    text-decoration-line: underline;
+}
+/*---------------*/
+/*网页脚*/
+#foot {
+    background-color: #18c4e2;
+    height: 10%;
+    /*margin-top:2px;*/
+    padding:0;
+    margin:0;
+
+    text-align: center;
+    font-size: 200%;
+    color: white;
+}
+
+/*评论区主体CSS设置*/
+#CommentArea{
+    height:80%;
+    margin:0;
+    padding:0;
+    width:100%;
+   /* display: flex;
+    justify-content: center;
+    align-items: flex-end;*/
+    /*background-color: grey;*/
+}
+#formca2{
+
+    font-weight: 700px;
+    width: 100%;
+    height:100%;
+    padding:5% 0;
+    margin:0;
+    text-align: center;
+    background-color: #00baf3;
+}
+/*信息区域设置*/
+.info
+{
+    border-collapse:collapse;
+    width:80%;
+    height: 100%;
+}
+
+.info td
+{
+    border:1px solid black;
+    text-align: center;
+    background-color:#00baf3;
+}
+
+.left-td{
+    width:12.5% ;
+    background-color:#00baf3;
+    color:whitesmoke;
+}
+.inputbar{
+    width:75%;
+    background-color: #85fafa;
+}
+/*评论区设置*/
+#commenttext{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    resize: none;
+    background-color: #85fafa;
+    width:75%;  
+    /*height:100%;*/
+}
+
+.button{
+    margin:auto;
+    background-color: #0261af;
+    border:none;
+    color:whitesmoke;
+}
+
+
+/* */
+#QRCodeD,#QRCodeM
+{
+    position: fixed;
+    right:0px;
+    bottom: 0px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 500px)
+{
+    *{  
+        font-size: 10px;
+        margin:0;
+        padding:0;
+
+    }
+    #formca2{
+            font-weight: 400px;
+            width: 100%;
+            height:100%;
+            padding:50% 0;
+            margin:0;
+            text-align: center;
+            background-color: #ec7f7f;
+        }
+    
+    .info td
+    {
+        background-color:#ec7f7f;
+    }
+    .left-td{
+        background-color:#ec7f7f;
+    }
+    .inputbar{
+        background-color: #e6ae98
+    }
+    /*评论区设置*/
+    #commenttext{
+        background-color: #e6ae98;
+    }
+
+    .button{
+        background-color: #d84c29;
+    }
+}

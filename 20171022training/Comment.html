@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Comment主页文件 2017-10-20 -->
+<html style="height:100%"> 
+    <head>
+        <meta content="text/html; charset=utf-8"> 
+        <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+        <script src="JS\myScript.js"></script>
+        <title>学妹天地</title>
+        <link href="CSS\STUCampus1st.css" rel="stylesheet" type="text/css">      
+    </head>
+    <body style="height:100%">
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <ul class="s-nav">
+            <li ><a href='HOME.html'>HOME</a></li>
+            <li class="active"><a href='#'>Comment</a></li> <!-- 使用active class来设置导航栏选中的样式 -->
+        </ul>
+    </nav>
+    <!-- comment area -->
+    <div id="CommentArea">
+        <form id='formca2' onsubmit="return confirmInfo()">
+        <!-- 信息区域 -->
+        <fieldset>
+            <legend>Comment Page</legend>
+            <table style="margin:auto" class="info">
+            <tr>
+                <td class="left-td">
+                    Name:
+                    <br/>
+                    Email:
+                </td>
+                <td>&nbsp<input id = "name" class="inputbar" type="text" required="required"/>
+                    <br/>
+                    <input id = "email" class="inputbar" type="email" required="required"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="left-td">Password:</td>
+                <td><input class="inputbar" type="password" required="required" /></td>
+            </tr>
+            </table>
+        </fieldset>
+        <!-- 评论区 -->
+        <fieldset>
+            <table style="margin:auto" class="info">
+                <tr>
+                    <td class="left-td">Comment:</td>
+                    <td><textarea id="commenttext"  rows="5"  wrap="virtual" placeholder="学妹天地评论区,请勿冲动!" required="required"></textarea></td>
+                </tr>
+           </table>
+        </fieldset>
+        <!-- 提交按钮及重置按钮区域 -->
+        <fieldset>
+            <input class="button" type="submit" value="Submit" >
+            <input class="button" type="reset" value="Reset">
+        </fieldset>
+        </form>
+    </div>
+
+    <!-- foot -->
+    <div id='foot'>
+        copyright:WenZo2017&copy
+    </div>
+    </body>
+</html>

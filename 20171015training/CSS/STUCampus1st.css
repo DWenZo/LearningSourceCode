@@ -1,0 +1,87 @@
+/*2017-10-20 WenZo*/
+/*全局字体设置*/
+* {
+    font-size:20px;
+    margin:0;
+}
+/*-------------------------------------*/
+.nav{
+    height: 100px;
+    background-color: black ;
+}
+li{
+    float: left;
+    margin-left:10px;
+    margin-top: 3px;
+}
+ul{
+    height: 100px;
+    list-style: none;    /*去除小圆点*/
+}
+/*导航栏各种设置*/
+a:link{
+    color:blue;
+    text-decoration-line: none;
+    font-size:70px;
+}
+a:hover{
+    color:#ffffff;
+    font-size: 80px;
+}
+.active a{
+    color:pink;
+    text-decoration-line: underline;
+}
+/*---------------*/
+/*网页脚*/
+#foot {
+    background-color: black;
+    height: 100px;
+    /*margin-top:2px;*/
+    padding:auto;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    color: white;
+}
+
+/*评论区主体CSS设置*/
+#CommentArea{
+    height:800px;
+    /*background-color: grey;*/
+}
+#ca2{
+    height: 700px;
+    font-weight: 800px;
+    width: 900px;
+    margin:25% auto ;
+    text-align: center;
+}
+/*信息区域设置*/
+.info
+{
+border-collapse:collapse;
+width:800px;
+}
+
+.info td
+{
+border:1px solid black;
+text-align: center;
+}
+
+.left-td{
+    width: 100px;
+}
+.inputbar{
+    width:600px;
+}
+/*评论区设置*/
+#commenttext{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    resize: none;
+}
+.button{
+    margin:auto 150px;
+}
