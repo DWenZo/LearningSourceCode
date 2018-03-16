@@ -16,19 +16,19 @@ namespace 氪金抽卡程序
             string s;
             if (r < 10)
             {
-                s = "购买LOL英雄皮肤75%优惠！";
+                s = "SSR角色卡！";
                 Console.WriteLine("恭喜你获得了 ： "+s+r);
                 Console.Beep(); 
             }
             else if(r < 30)
             {
-                s = "购买LOL英雄皮肤50%优惠！";
+                s = "SR角色卡！";
                 Console.WriteLine("恭喜你获得了 ： " + s + r);
                 Console.Beep();
             }
             else if(r < 60)
             {
-                s = "购买LOL英雄皮肤25%优惠！";
+                s = "R角色卡！";
                 Console.WriteLine("恭喜你获得了 ： " + s + r );
                 Console.Beep();
             }
